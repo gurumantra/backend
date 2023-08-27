@@ -1,4 +1,4 @@
-BATON= {
+BATON = {
     'SITE_HEADER': 'Guru Mantra',
     'SITE_TITLE': 'Guru Mantra',
     'INDEX_TITLE': 'Guru Mantra',
@@ -32,7 +32,7 @@ BATON= {
             )
         },
 
-        {'type': 'title', 'label': 'content', 'apps': ('katha','mantra','poojabidhi','chadparba')},
+        {'type': 'title', 'label': 'content', 'apps': ('katha', 'mantra', 'poojabidhi', 'chadparba')},
 
         {
             'type': 'app',
@@ -56,6 +56,11 @@ BATON= {
                     'name': 'mantra',
                     'label': 'Mantra'
                 },
+
+                {
+                    'name': 'category',
+                    'label': 'Category'
+                }
             )
         },
         {
