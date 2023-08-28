@@ -6,3 +6,4 @@ class PoojaBidhiSerializer(serializers.ModelSerializer):
     class Meta:
         model = PoojaBidhi
         fields = '__all__'
+        depth = 1
