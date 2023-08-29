@@ -16,6 +16,7 @@ class ChadParba(TimeStamp):
     views_count = models.IntegerField(default=0, verbose_name='Views Count of Chad Parba')
     category = models.ForeignKey(Category, on_delete=models.CASCADE, verbose_name='Category of Chad Parba', null=True,
                                  blank=True, related_name='chadparba_category')
+    related_katha = models.ManyToManyField('katha.Katha', blank=True, verbose_name='Related Katha')
 
     class Meta:
         verbose_name_plural = 'Chad Parba Haru'
