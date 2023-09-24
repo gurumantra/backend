@@ -26,7 +26,7 @@ class Mantra(TimeStamp):
     banner_image = models.ImageField(upload_to='images/', null=True, blank=True, verbose_name='Banner Image')
     exact_mantra = models.TextField(null=True, blank=True, verbose_name='Exact Mantra')
     description = models.TextField(null=True, blank=True, verbose_name='Description meaning of Mantra')
-    link = models.CharField(max_length=1000, null=True, blank=True, verbose_name='Link of audio file')
+    audio = models.FileField(upload_to='audio/', null=True, blank=True, verbose_name='Audio of Mantra')
     loop_count = models.IntegerField(default=0, verbose_name='Loop Count of Mantra')
     views_count = models.IntegerField(default=0, verbose_name='Views Count of Mantra')
     category = models.ForeignKey(Category, on_delete=models.CASCADE, verbose_name='Category of Mantra', null=True,
